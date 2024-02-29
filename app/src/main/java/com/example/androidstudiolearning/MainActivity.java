@@ -23,7 +23,11 @@ public class MainActivity extends AppCompatActivity {
         campo1 = (EditText) findViewById(R.id.campo1);
         campo2 = (EditText) findViewById(R.id.campo2);
         etiResultado = (TextView) findViewById(R.id.etiResultado);
+    }
 
+    @Override
+    protected void onResume() { //Ejemplo de metodo de cliclo de vida de las actividades
+        super.onResume();
     }
 
     public void onClick(View view) {
